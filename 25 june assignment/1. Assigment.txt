@@ -1,0 +1,21 @@
+q.2
+
+Let’s create a detailed pseudocode for the program that takes a number as input, calculates the square if it’s even, or the cube if it’s odd, and then outputs the result. We’ll incorporate conditional and looping constructs:
+has context menu.
+
+
+ans 
+--
+int input_number;
+    printf("Enter a number: ")
+    scanf("%d", &input_number)
+
+    int result;
+    if (input_number % 2 == 0
+    result = input_number * input_number;  
+    else 
+    result = input_number * input_number * input_number;  
+    
+    printf("Result: %d\n", result);
+
+    return 0
