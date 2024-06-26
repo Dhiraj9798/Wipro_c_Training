@@ -5,17 +5,41 @@ has context menu.
 
 
 ans 
---
-int input_number;
-    printf("Enter a number: ")
-    scanf("%d", &input_number)
+---------------------------------------------------------------
+#include <stdio.h>
 
-    int result;
-    if (input_number % 2 == 0
-    result = input_number * input_number;  
-    else 
-    result = input_number * input_number * input_number;  
+int main() 
+{
+    int number;
+
+// Function
+int square(int num)
+{
+    return num * num;
+}
+
+    //  another Function 
+int cube(int num) 
+{
+    return num * num * num;
+}
+
+         //  input
+    printf("Enter a number: ");
+    scanf("%d", &number);
     
-    printf("Result: %d\n", result);
-
-    return 0
+            //  even or odd
+    if (number % 2 == 0)
+{
+             // Calculate square if even
+        int result = square(number);
+        printf("Square of %d is %d\n", number, result);
+    } else
+{
+            // Calculate cube if odd
+        int result = cube(number);
+        printf("Cube of %d is %d\n", number, result);
+    }
+    
+    return 0;
+}
