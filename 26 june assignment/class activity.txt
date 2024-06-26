@@ -1,0 +1,27 @@
+https://app.diagrams.net/
+it is for creating diagram
+-------------------------
+
+sir git hub account
+https://github.com/HSKB8/wipro1
+
+----------------
+assgm 1.
+ in sir git hub account mcq (c)
+------------------------------
+
+Dear Participants,
+Kindly, attempt Day 3 (Jun 26) C quiz.
+URL: https://shorturl.at/aFpYA
+Time: Jun 26, 11:55 PM.
+Thanks.
+
+========================
+
+How to run an Ubuntu Desktop virtual machine using VirtualBox 7
+https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
+https://www.geeksforgeeks.org/how-to-install-ubuntu-on-virtualbox/
+Hot to install gcc (C compiler) and g++ (C++ compiler) inside Ubuntu Desktop virtual machine using VirtualBox 7
+https://www.namehero.com/blog/how-to-install-gcc-on-ubuntu/
+https://www.youtube.com/watch?v=-ZfNCdk7XNY
+has context menu
