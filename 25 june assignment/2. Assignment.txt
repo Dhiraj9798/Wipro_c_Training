@@ -3,55 +3,46 @@ Let’s create a flowchart for the user login process with conditional paths for
 
 
 
- _________________
-|      GO         |
-|_________________|
-        |
-        V
- _________________________
-| Enter Username/Password |
-|_________________________|
-        |
-        V
- _____________________
-| Check process	      |
-|_____________________|
-        |
-        V
-    /        \
-   /          \
-  V            X
- _______________________
-| Successful Login      |
-| (Continue to App)     |
-|_______________________|
-        |
-        V
- _______________________
-| Unsuccessful Login    |
-|_______________________|
-        |
-        V
- _______________________
-|  Failed Attempts      |
-|_______________________|
-        |
-        V
-  ________________
- | Check Attempts |
- |_____________ __|
-      |
-      V
-  _____________
- | Lock Account|
- |_____________|
-      |
-      V
- ________________
-| End            |
-|________________|
 
-```
+       GO         
+
+        |
+        
+
+ Enter Username/Password
+
+        |
+        
+
+ Check process	      
+
+        |
+  
+ Successful Login      
+ (Continue to App)     
+
+        |
+        
+
+ Unsuccessful Login    
+
+        |
+        
+  Failed Attempts      
+
+        |
+     
+  Check Attempts     
+      V
+  
+  Lock Account
+
+      |
+      
+    End            
+
+
+
 
 Flowchart Explanation:
 
@@ -61,11 +52,11 @@ Flowchart Explanation:
    - If credentials are correct, move to "Successful Login" path.
    - If credentials are incorrect, move to "Unsuccessful Login" path.
 4. Successful Login: User successfully logING 
-5. **Unsuccessful Login:** Increment the count of failed login attempts.
-6. **Increment Failed Attempts:** Keep track of the number of failed attempts.
-7. **Check Attempts: Check if the number of failed attempts has reached three.
-   - If yes, move to "Lock Account" path.
-   - If no, return to "Enter Username/Password" to allow another login attempt.
-8. **Lock Account:** Account is locked due to three consecutive failed attempts.
-9. **End:
+5. Unsuccessful Login: Increment the count of failed login attempts.
+6. Increment Failed Attempts:** Keep track of the number of failed attempts.
+7. Check Attempts: Check if the number of failed attempts has reached three.
+   If yes, move to "Lock Account" path.
+    If no, return to "Enter Username/Password" to allow another login attempt.
+8. Lock Account- Account is locked due to three consecutive failed attempts.
+9. End:
 
