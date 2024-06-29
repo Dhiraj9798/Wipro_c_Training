@@ -1,0 +1,86 @@
+Write a C program to sum 'N' numbers. Program should ask how many numbers to sum from user. Program should also ask category of numbers to sum. There are two categories
+1. Even nummbers
+2. Odd numbers
+3. Exit
+Design a menu system given above choices.
+Whatever category of numbers user enters program should sum only those category of numbers.
+Sample 1:
+Total number to sum: 10
+1. Even nummbers
+2. Odd numbers
+3. Exit
+Choice: 1
+Sum: 120 (which is a sum of these numbers 2 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20).
+has context menu
+
+
+--------------------------------------------------------------------------------------
+
+ANS-
+
+
+#include <stdio.h>
+
+int main() 
+
+
+{
+    int n, choice, i, num, sum = 0;
+
+    printf("Enter the total number of values to sum: ");
+
+
+    scanf("%d", &n);
+
+
+
+    while (1) 
+
+
+{
+
+
+        printf("\nMenu:\n");
+
+        printf("1. Sum of even numbers\n");
+
+        printf("2. Sum of odd numbers\n");
+
+        printf("3. Exit\n");
+
+        printf("Enter your choice: ");
+
+        scanf("%d", &choice);
+
+
+        if (choice == 3)
+ {
+            printf("Exiting the program.\n");
+            break;
+        }
+
+        sum = 0;
+ 
+
+        for (i = 1; i <= n; i++)
+
+ {
+            printf("Enter value %d: ", i);
+
+            scanf("%d", &num);
+
+            if (choice == 1 && num % 2 == 0) 
+{
+                sum += num; 
+
+            } else if (choice == 2 && num % 2 != 0)
+ {
+                sum += num; 
+            }
+        }
+
+        printf("Sum: %d\n", sum);
+    }
+
+    return 0;
+}

@@ -1,0 +1,31 @@
+Assignment3, pointers
+Create a normal variable
+Create a pointer variable
+Store memory address of a normal variable inside pointer variable
+Read the value of normal variable and print on the screen using pointer variable only
+Change of the value of the normal variable to some other other value using pointer variable only
+
+
+Ans--------------------
+int main() {
+  // Create a normal variable
+  int normal_var = 10;
+
+  // Create a pointer variable
+  int *ptr;
+
+  // Store the memory address 
+  ptr = &normal_var;
+
+  // Read the value of the normal variable   printf("Value of normal_var: %d\n", *ptr);
+
+  // Change the value of the normal variable 
+  *ptr = 20;
+
+  // Print the updated value of normal_var
+
+
+  printf("Updated value of normal_var: %d\n", normal_var);
+
+  return 0;
+}

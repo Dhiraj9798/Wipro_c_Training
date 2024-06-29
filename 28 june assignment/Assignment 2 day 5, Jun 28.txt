@@ -1,0 +1,68 @@
+Assignment, day 5, Jun 28
+Write a C program that will create an array 95 characters, store all 95 printable ASCII Code table characters in it starting ASCII code 32 to 126. Then print all the charactes stored in array and while priniting also tell their category
+Category is like this:
+Category 1: Alphabet, small case letter
+Category 2: Alphabet, capital case letter
+Category 3: Nemerical Digit
+Category 4: General Printable Character
+ 
+Output sample:
+Character		Category
+--------------  ---------------------------
+			    General Printable Character
+!				General Printable Character
+.
+.
+.
+.
+0				Nemerical Digit
+.
+.
+.
+A 				Alphabet, capital case letter
+.
+.
+a 				Alphabet, small case letter
+has context menu
+
+ANS-----------------
+
+#include <stdio.h>
+
+int main()
+
+ {
+  
+    char printableChars[95];
+    int i;
+
+       for (i = 0; i < 95; i++) {
+        printableChars[i] = 32 + i;
+    }
+
+   
+    printf("Character\tCategory\n");
+    printf("--------------\t---------------------------\n");
+
+   
+    for (i = 0; i < 95; i++) {
+        char ch = printableChars[i];
+        printf("%c\t\t", ch);
+
+        if (ch >= 'a' && ch <= 'z')
+ {
+            printf("Alphabet, small case letter\n");
+        } else if (ch >= 'A' && ch <= 'Z')
+ {
+            printf("Alphabet, capital case letter\n");
+        } else if (ch >= '0' && ch <= '9')
+ {
+            printf("Numerical Digit\n");
+        } else 
+{
+            printf("General Printable Character\n");
+        }
+    }
+
+    return 0;
+}
