@@ -1,0 +1,63 @@
+Create a C program that will allocate memory for 1 integer, 1 float, 1 char and 1 double data in heap memory using Dynamic Memory Allocation in C. Then store some value in this dynamically allocated (reserve) memory in heap and double that value and print the result on the screen.
+
+-----------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+
+
+
+ {
+    int *intPtr;
+    float *floatPtr;
+
+    char *charPtr;
+
+    double *doublePtr;
+
+
+
+    intPtr = (int *)malloc(sizeof(int));
+
+
+    floatPtr = (float *)malloc(sizeof(float));
+    charPtr = (char *)malloc(sizeof(char));
+
+    doublePtr = (double *)malloc(sizeof(double));
+
+    *intPtr = 10;
+    *floatPtr = 3.14;
+    *charPtr = 'A';
+
+
+    *doublePtr = 2.71828;
+
+    *intPtr *= 2;
+
+    *floatPtr *= 2;
+
+
+    *doublePtr *= 2;
+
+    printf("Doubled integer value: %d\n", *intPtr);
+
+    printf("Doubled float value: %.2f\n", *floatPtr);
+
+    printf("Doubled char value: %c\n", *charPtr);
+
+    printf("Doubled double value: %.5lf\n", *doublePtr);
+
+    free(intPtr);
+
+    free(floatPtr);
+    free(charPtr);
+
+    free(doublePtr);
+
+    return 0;
+}
+
+
