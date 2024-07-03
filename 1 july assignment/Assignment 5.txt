@@ -1,0 +1,23 @@
+Assignment:
+Use array pointers to work with 3 strings and prints their uppercase.
+Sample1:
+Input = INdia, usa, Russia
+Output = INDIA, USA, RUSSIA
+
+ans---------------
+
+#include
+#include
+#include <ctype.h>
+
+int main() {
+char *str[] = {"INdia", "usa", "Russia"};
+int i, j;
+for (i = 0; i
+for (j = 0; j
+printf("%c", toupper(str[i][j]));
+}
+printf("\n");
+}
+return 0;
+}

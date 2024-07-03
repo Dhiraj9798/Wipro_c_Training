@@ -1,0 +1,22 @@
+Class assignment:
+Write a C program which will double the value of the normal variable (lets say x) inside user defined function named 'Double1() and Double2()'.  Double1() will be use pass by value and Double will use the pass by reference (pointer). After calling the Double1() and Double2() print the value of the variable inside the main().
+has context menu
+
+
+-----------------------
+
+#include <stdio.h>
+
+void Double1(int x) {
+x = x * 2;
+}
+void Double2(int *x) {
+*x = *x * 2;
+}
+int main() {
+int x = 5;
+Double1(x);
+Double2(&x);
+printf("After doubling: %d\n", x);
+return 0;
+}

@@ -1,0 +1,54 @@
+Class assignment:
+Write a C program that will try to change all characters of string "abc" to capital letters "ABC". Identify in which method you are able to change or not?
+Method 1:
+Char str[3];
+Scanf("%s", str);
+Method 2:
+Char str[3];
+Scanf("[^n]%s", str);
+Method 3:
+#include <sttring.h>
+Char str[3];
+Strcpy(str, "abc");
+Method 4:
+Char str[3] = "abc";
+Method 5:
+Char str[] = "abc";
+Method 6:
+Char *str = "abc";
+has context menu
+
+----------------------------------------
+
+
+int main() {
+    char str[3];  // Dclr char arrary
+    scanf("%s", str);  
+
+  
+    for (int i = 0; i < 3; i++)
+ {
+        str[i] = toupper(str[i]);
+    }
+
+    printf("%s\n", str);  // Print the modified string
+
+    return 0;
+}
+```
+-------------------------------------------
+int main() {
+    char str[3];  // Dclr char arrary
+    scanf("%s", str);  
+
+  
+    for (int i = 0; i < 3; i++)
+ {
+        str[i] = toupper(str[i]);
+    }
+
+    printf("%s\n", str);  // Print the modified string
+
+    return 0;
+}
+```
